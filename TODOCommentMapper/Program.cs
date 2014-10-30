@@ -35,6 +35,8 @@ namespace TODOCommentMapper
 								Console.Write(".ctor");
 							else if (todoComment.MethodOrPropertyIfAny is MethodDeclarationSyntax)
 								Console.Write(((MethodDeclarationSyntax)todoComment.MethodOrPropertyIfAny).Identifier);
+							else if (todoComment.MethodOrPropertyIfAny is IndexerDeclarationSyntax)
+								Console.Write("[Indexer]");
 							else if (todoComment.MethodOrPropertyIfAny is PropertyDeclarationSyntax)
 								Console.Write(((PropertyDeclarationSyntax)todoComment.MethodOrPropertyIfAny).Identifier);
 							else
