@@ -88,7 +88,7 @@ namespace TODOCommentMapper
 
 			protected override void VisitTrivia(SyntaxTrivia trivia)
 			{
-				if (_commentTypes.Contains(trivia.CSharpKind()))
+				if (_commentTypes.Contains(trivia.Kind()))
 				{
 					string triviaContent;
 					using (var writer = new StringWriter())
