@@ -33,4 +33,5 @@ _ReSharper*/
 *.resharper
 *.orig
 [Pp]ackages/
-
+.idea
+.vs
